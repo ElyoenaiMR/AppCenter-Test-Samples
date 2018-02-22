@@ -1,7 +1,40 @@
-# iOS output
+# Android output
+```
+>>> tree                                                                        
+[[object CalabashRootView] > DecorView]                                         
+  [LinearLayout > FrameLayout]
+    [FitWindowsFrameLayout] id: "action_bar_root"
+      [ContentFrameLayout > ... > PlatformRenderer] id: "content"
+        [NavigationPageRenderer] id: "NoResourceEntry-1"
+          [PageContainer > TabbedPageRenderer] id: "NoResourceEntry-3"
+            [FormsViewPager] id: "NoResourceEntry-2"
+              [PageContainer] id: "NoResourceEntry-17"
+                [PageRenderer > Platform_DefaultRenderer] id: "NoResourceEntry-14"
+                  [LabelRenderer]
+                    [FormsTextView] id: "NoResourceEntry-15" text: "WebView"
+                  [WebViewRenderer]
+                    [WebView] id: "NoResourceEntry-16"
+                      [dom] id: "__w2_vvQENiR_mweb_lookup_bar_back_button"
+                      [dom] id: "__w2_vvQENiR_mweb_lookup_bar_input"
+                      [dom] id: "__w2_LsYUfTb_anon_checkbox"
+            [TabLayout > TabLayout$SlidingTabStrip] id: "sliding_tabs"
+              [TabLayout$TabView]
+                [AppCompatTextView] text: "Browse"
+              [TabLayout$TabView]
+                [AppCompatTextView] text: "About"
+              [TabLayout$TabView]
+                [AppCompatTextView] text: "WebViewPage"
+          [Toolbar] id: "toolbar"
+            [AppCompatTextView] text: "WebViewPage"
+  [View] id: "navigationBarBackground"
+  [View] id: "statusBarBackground"
+```
 
->>> tree                                                                                                                                                                                                                                                                                                                                                                  
-[CalabashRootView > ... > UILayoutContainerView]                                                                                                                                                                                                                                                                                                                         
+
+# iOS output
+```
+>>> tree                                                                                                                                 
+[CalabashRootView > ... > UILayoutContainerView]                                                                                   
   [UITransitionView > ... > UILayoutContainerView]
     [UINavigationTransitionView > ... > Xamarin_Forms_Platform_iOS_Platform_DefaultRenderer]
       [Xamarin_Forms_Platform_iOS_LabelRenderer]
@@ -117,37 +150,8 @@
     [UITabBarButton] label: "WebViewPage"
       [UITabBarSwappableImageView] id: "tab_feed.png"
       [UITabBarButtonLabel] label: "WebViewPage",  text: "WebViewPage"
+```
 
 
 
 
-
-# Android
->>> tree                                                                        
-[[object CalabashRootView] > DecorView]                                         
-  [LinearLayout > FrameLayout]
-    [FitWindowsFrameLayout] id: "action_bar_root"
-      [ContentFrameLayout > ... > PlatformRenderer] id: "content"
-        [NavigationPageRenderer] id: "NoResourceEntry-1"
-          [PageContainer > TabbedPageRenderer] id: "NoResourceEntry-3"
-            [FormsViewPager] id: "NoResourceEntry-2"
-              [PageContainer] id: "NoResourceEntry-17"
-                [PageRenderer > Platform_DefaultRenderer] id: "NoResourceEntry-14"
-                  [LabelRenderer]
-                    [FormsTextView] id: "NoResourceEntry-15" text: "WebView"
-                  [WebViewRenderer]
-                    [WebView] id: "NoResourceEntry-16"
-                      [dom] id: "__w2_vvQENiR_mweb_lookup_bar_back_button"
-                      [dom] id: "__w2_vvQENiR_mweb_lookup_bar_input"
-                      [dom] id: "__w2_LsYUfTb_anon_checkbox"
-            [TabLayout > TabLayout$SlidingTabStrip] id: "sliding_tabs"
-              [TabLayout$TabView]
-                [AppCompatTextView] text: "Browse"
-              [TabLayout$TabView]
-                [AppCompatTextView] text: "About"
-              [TabLayout$TabView]
-                [AppCompatTextView] text: "WebViewPage"
-          [Toolbar] id: "toolbar"
-            [AppCompatTextView] text: "WebViewPage"
-  [View] id: "navigationBarBackground"
-  [View] id: "statusBarBackground"
