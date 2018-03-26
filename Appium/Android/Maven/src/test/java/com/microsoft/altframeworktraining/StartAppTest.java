@@ -22,6 +22,7 @@ public class StartAppTest {
     @Rule
     public TestWatcher watcher = Factory.createWatcher();
 
+//    private AndroidDriver<AndroidElement> driver;
     private static EnhancedAndroidDriver<MobileElement> driver;
 
     public static EnhancedAndroidDriver<MobileElement> startApp() throws MalformedURLException {
