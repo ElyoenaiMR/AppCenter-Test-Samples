@@ -1,10 +1,11 @@
 import XCTest
+import AppCenterXCUITestExtensions
 
 class XCUITestDemoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
-                continueAfterFailure = false
+                continueAfterFailure = true
         XCUIApplication().launch()
 
     }
