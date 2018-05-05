@@ -25,6 +25,7 @@ namespace UITestDemo.UITest
             {
                 return ConfigureApp
                     .Android
+					.EnableLocalScreenshots()
                     // TODO: Update this path to point to your Android app and uncomment the
                     // code if the app is not included in the solution.
                     //.ApkFile ("../../../precompiledApps/com.companyname.UITestDemo.apk")
